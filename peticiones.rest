@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/api/inmuebles/
+
+###
+POST http://localhost:3000/api/inmuebles/
+Content-Type: application/json
+
+{
+    "piso": 8,
+    "letra": "C",
+    "extension": 100,
+    "numero_habitaciones": 8,
+    "alquilado": false,
+    "nombre_propietario": "Pepe García",
+    "email_contacto": "pgarcia@apple.com"
+}
+
+###
+PUT  http://localhost:3000/api/inmuebles/636bba8ef7702eba3a612184
+Content-Type: application/json
+
+{
+    "piso": 8,
+    "letra": "C",
+    "extension": 100,
+    "numero_habitaciones": 8,
+    "alquilado": false,
+    "nombre_propietario": "Francisco García",
+    "email_contacto": "fgarcia@apple.com"
+}
+
+###
+DELETE  http://localhost:3000/api/inmuebles/636bba8ef7702eba3a612184
