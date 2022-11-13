@@ -6,17 +6,17 @@ POST http://localhost:3000/api/inmuebles/
 Content-Type: application/json
 
 {
-    "piso": 8,
-    "letra": "C",
+    "piso": 1,
+    "letra": "E",
     "extension": 100,
-    "numero_habitaciones": 8,
-    "alquilado": false,
+    "numero_habitaciones": 3,
+    "alquilado": "NO",
     "nombre_propietario": "Pepe García",
     "email_contacto": "pgarcia@apple.com"
 }
 
 ###
-PUT  http://localhost:3000/api/inmuebles/636bba8ef7702eba3a612184
+PUT  http://localhost:3000/api/inmuebles/63718089b2fe586bfc223bc7
 Content-Type: application/json
 
 {
@@ -24,10 +24,10 @@ Content-Type: application/json
     "letra": "C",
     "extension": 100,
     "numero_habitaciones": 8,
-    "alquilado": false,
+    "alquilado": "SI",
     "nombre_propietario": "Francisco García",
     "email_contacto": "fgarcia@apple.com"
 }
 
 ###
-DELETE  http://localhost:3000/api/inmuebles/636bba8ef7702eba3a612184
+DELETE  http://localhost:3000/api/inmuebles/63718063b2fe586bfc223bc4

@@ -40,7 +40,11 @@ router.delete("/:inmuebleId", async (req, res) => {
     try {
         const { inmuebleId } = req.params;
         const inmueble = await Inmueble.findByIdAndDelete(inmuebleId);
-        res.json(inmueble);
+        if ((inmueble == null)) {
+            res.json("No existe usuario con ese ID");
+        } else {
+            res.json("Usuario eliminado")
+        }
     } catch (error) {
         res.json({ fatal: error.message });
     }
